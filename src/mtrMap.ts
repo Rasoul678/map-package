@@ -189,7 +189,7 @@ class MtrMap {
     if (!distance) {
       flyDuration = 0;
     }
-    
+
     //! Remove last marker
     if (this._markerObj) {
       this.map.removeLayer(this._markerObj);

@@ -90,7 +90,7 @@ L.Control.SearchBox = L.Control.extend({
   },
 
   _onClickDoc: function (e: MouseEvent) {
-    this.classList.remove("show-results");
+    this.classList.remove('show-results');
   },
 
   _onFocus: function (e: FocusEvent) {
