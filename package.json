@@ -1,6 +1,6 @@
 {
   "name": "map-package",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A map package",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -19,7 +19,10 @@
     "type": "git",
     "url": "git+https://github.com/Rasoul678/map-package.git"
   },
-  "keywords": ["map", "leaflet"],
+  "keywords": [
+    "map",
+    "leaflet"
+  ],
   "author": "Rasoul Hesami Rostami",
   "license": "ISC",
   "bugs": {
