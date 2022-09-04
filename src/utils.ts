@@ -58,7 +58,7 @@ export const getLatLngByAddress = (params: LatLngSearchParams) => {
   });
 };
 
-export const debounce = (func: () => Promise<void>, timeout = 300) => {
+export const debounce = (func: () => Promise<any>, timeout = 300) => {
   let timer: any;
 
   return (...args: any[]) => {
