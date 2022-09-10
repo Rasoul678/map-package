@@ -58,6 +58,7 @@ class MtrMap {
       getAddressBy: this.getAddressBy,
       getLatLngBy: this.getLatLngBy,
       addMarker: this.addMarker.bind(this),
+      onGeoResult: this._options.events.onGeoResult,
     });
 
     //! Add the tiles
@@ -142,7 +143,7 @@ class MtrMap {
     markerObj.addTo(this.map);
 
     //* Fly effect on map
-    this.map.flyTo({ lon: this.marker.lng, lat: this.marker.lat }, this.map.getZoom(), {
+    this.map.flyTo({ lon: this.marker.lng, lat: this.marker.lat }, this._options.presets.zoom || this.map.getZoom(), {
       animate: this._options.presets.flyMode ?? true,
       duration: flyDuration,
     });
